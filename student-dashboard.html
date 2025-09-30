@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - College Base Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>College Base Management System</h1>
+        <nav>
+            <span id="studentName"></span>
+            <button onclick="logout()" class="btn btn-logout">Logout</button>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="dashboard">
+            <h2>Student Dashboard</h2>
+            
+            <div class="card">
+                <h3>Student Details</h3>
+                <div class="details">
+                    <p><strong>Name:</strong> <span id="detailName"></span></p>
+                    <p><strong>Roll No:</strong> <span id="detailRoll"></span></p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Marks</h3>
+                <div id="marksTable"></div>
+            </div>
+            
+            <div class="card">
+                <h3>Attendance</h3>
+                <div class="attendance-info">
+                    <p><strong>Total Classes:</strong> <span id="totalClasses"></span></p>
+                    <p><strong>Classes Attended:</strong> <span id="attendedClasses"></span></p>
+                    <p><strong>Attendance Percentage:</strong> <span id="attendancePercentage"></span></p>
+                    <div class="attendance-bar">
+                        <div id="attendanceProgress" class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
